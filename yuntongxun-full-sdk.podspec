@@ -72,10 +72,11 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "YTX_iOS_Full_SDK"
+  s.source_files  = "YTX_iOS_Full_SDK/**/*.h", "YTX_iOS_Full_SDK/**/*.m"
+  s.vendored_libraries = 'YTX_iOS_Full_SDK/lib/YTX_iOS_Full_SDK_v5.3.0r1.a'
   #  s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+  s.public_header_files = "YTX_iOS_Full_SDK/**/*.h"
 
 
 
