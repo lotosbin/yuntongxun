@@ -73,7 +73,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "YTX_iOS_Full_SDK/**/*.h", "YTX_iOS_Full_SDK/**/*.m"
-  s.vendored_libraries = 'YTX_iOS_Full_SDK/lib/YTX_iOS_Full_SDK_v5.3.0r1.a'
+  #s.vendored_libraries = 'YTX_iOS_Full_SDK/lib/YTX_iOS_Full_SDK_v5.3.0r1.a'
   #  s.exclude_files = "Classes/Exclude"
 
   s.public_header_files = "YTX_iOS_Full_SDK/**/*.h"
@@ -88,10 +88,10 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  s.frameworks = "CoreTelephony", "MediaPlayer", "CFNetwork", "SystemConfiguration", "MobileCoreServices", "AudioToolbox", "CoreGraphics", "AVFoundation", "CoreMedia"
+  s.frameworks = "CoreTelephony", "MediaPlayer", "CFNetwork", "SystemConfiguration", "MobileCoreServices", "AudioToolbox", "CoreGraphics", "AVFoundation", "VideoToolbox", "CoreMedia"
 
   # s.library   = "iconv"
-  s.libraries = 'icucore', 'sqlite3', 'z', 'xml2'
+  s.libraries = 'icucore', 'sqlite3', 'z', 'xml2', 'stdc++.6.0.9', 'resolv.9'
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
